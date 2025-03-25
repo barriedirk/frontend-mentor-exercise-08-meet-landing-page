@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet - Group chat application for virtual face-to-face connections and collaboration across devices">
     <style>@import "https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap";
 
 </style>
@@ -15,35 +16,38 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <header>
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+    <header role="banner">
       <div class="wrapper">
-        <img class="logo-meet" src="/logo.46f01af4.svg" alt="Logo of Meet">
-        <section class="hero">
-          <h1>Group Chat for Everyone</h1>
+        <img class="logo-meet" src="/logo.46f01af4.svg" alt="Meet">
+        <div class="hero" role="region" aria-labelledby="hero-heading">
+          <h1 id="hero-heading">Group Chat for Everyone</h1>
           <p>
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
-          <section class="actions">
-            <button type="button" class="action--one">
-              Download <span>v1.3</span>
+          <div class="actions" role="group" aria-label="Download and information options">
+            <button type="button" class="action--one" aria-label="Download Meet version 1.3">
+              Download <span aria-hidden="true">v1.3</span>
             </button>
-            <button type="button" class="action--two">What is it?</button>
-          </section>
-        </section>
+            <button type="button" class="action--two" aria-label="Learn more about Meet">
+              What is it?
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main>
-      <span class="badget">01</span>
-      <aside>
-        <img src="/image-woman-in-videocall.a694be96.jpg" alt="Photo of woman in videocall">
-        <img src="/image-women-videochatting.e54aeb76.jpg" alt="Photo of women videochatting">
-        <img src="/image-men-in-meeting.aefd8cbd.jpg" alt="Photo of men in meeting">
-        <img src="/image-man-texting.ee7110de.jpg" alt="Photo of man texting">
-      </aside>
-      <div class="information">
-        <h3>Built for modern use</h3>
+    <main id="main-content" role="main">
+      <span class="badget" aria-label="Section">01</span>
+      <section class="gallery" role="region" aria-label="Feature highlights">
+        <img src="/image-woman-in-videocall.a694be96.jpg" alt="Woman participating in a video conference call">
+        <img src="/image-women-videochatting.e54aeb76.jpg" alt="Group of women engaged in video chat">
+        <img src="/image-men-in-meeting.aefd8cbd.jpg" alt="Group of men collaborating in a virtual meeting">
+        <img src="/image-man-texting.ee7110de.jpg" alt="Man using Meet's messaging features">
+      </section>
+      <section class="information" role="region" aria-labelledby="features-heading">
+        <h3 id="features-heading">Built for modern use</h3>
 
         <h2>Smarter meetings, all in one place</h2>
 
@@ -52,18 +56,18 @@
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
         </p>
-      </div>
+      </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <div class="wrapper footer">
-        <span class="badget">02</span>
-        <h2>Experience more together</h2>
+        <span class="badget" aria-label="Section">02</span>
+        <h2 id="cta-heading">Experience more together</h2>
         <p>
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <button type="button" class="action--two">
-          Download <span>v1.3</span>
+        <button type="button" class="action--two" aria-label="Download Meet version 1.3">
+          Download <span aria-hidden="true">v1.3</span>
         </button>
       </div>
     </footer>
