@@ -80,7 +80,7 @@ section.gallery,
 
 header {
   width: 100%;
-  background-image: url("/assets/tablet/image-hero.png");
+  background-image: url("assets/tablet/image-hero.png");
   background-position: 50% 160px;
   background-repeat: no-repeat;
   background-size: 430px;
@@ -99,7 +99,7 @@ footer {
       var(--clr-cyan-600-opacity),
       var(--clr-cyan-600-opacity)
     ),
-    url("/assets/mobile/image-footer.jpg") no-repeat top center;
+    url("assets/mobile/image-footer.jpg") no-repeat top center;
   background-size: cover;
 }
 
@@ -279,7 +279,7 @@ footer p {
         var(--clr-cyan-600-opacity),
         var(--clr-cyan-600-opacity)
       ),
-      url("/assets/tablet/image-footer.jpg") no-repeat top center;
+      url("assets/tablet/image-footer.jpg") no-repeat top center;
   }
 
   footer .wrapper {
@@ -310,8 +310,8 @@ footer p {
   }
 
   header {
-    background-image: url("/assets/desktop/image-hero-left.png"),
-      url("/assets/desktop/image-hero-right.png");
+    background-image: url("assets/desktop/image-hero-left.png"),
+      url("assets/desktop/image-hero-right.png");
     background-position: 0 130px, 100% 130px;
     background-repeat: no-repeat, no-repeat;
     background-size: 394px, 394px;
@@ -327,7 +327,7 @@ footer p {
         var(--clr-cyan-600-opacity),
         var(--clr-cyan-600-opacity)
       ),
-      url("/assets/desktop/image-footer.jpg") no-repeat top center;
+      url("assets/desktop/image-footer.jpg") no-repeat top center;
     background-size: cover;
   }
 
